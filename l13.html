@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        
+        .content::before {
+            content: "Note: ";
+            font-weight: bold;
+        }
+        
+        .content::after {
+            content: " (End)";
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Hover over me</a>
+    <p class="content">This is some content.</p>
+</body>
+</html>

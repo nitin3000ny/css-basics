@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .responsive-box {
+            width: 80%;
+            margin: 0 auto;
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            .responsive-box {
+                background-color: lightcoral;
+                font-size: 14px;
+            }
+        }
+        
+        @media (min-width: 601px) and (max-width: 1200px) {
+            .responsive-box {
+                background-color: lightgreen;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="responsive-box">Responsive Design Example</div>
+</body>
+</html>

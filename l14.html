@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --main-bg-color: lightblue;
+            --main-text-color: darkblue;
+        }
+        
+        .custom-box {
+            background-color: var(--main-bg-color);
+            color: var(--main-text-color);
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+        
+        .change-color {
+            --main-bg-color: lightcoral;
+            --main-text-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-box">Default Colors</div>
+    <div class="custom-box change-color">Changed Colors</div>
+</body>
+</html>
