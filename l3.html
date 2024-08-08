@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
         .block-element {
             display: block;
             background-color: lightblue;
         }
         
         .inline-element {
+            margin-top: 10px;
             display: inline;
             background-color: lightcoral;
+            
         }
         
         .inline-block-element {
+            margin-top: 10px;
             display: inline-block;
             background-color: lightgreen;
         }
+        
     </style>
 </head>
 <body>
-    <div class="block-element">Block Element</div>
+    
     <span class="inline-element">Inline Element</span>
+    <div class="block-element">Block Element</div>
     <span class="inline-block-element">Inline-Block Element</span>
 </body>
 </html>
