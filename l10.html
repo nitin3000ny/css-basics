@@ -19,24 +19,36 @@
             width: 100px;
             height: 100px;
             background-color: lightgreen;
-            animation: bounce 2s infinite;
+            animation: bounce 10s infinite;
         }
         
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+            0%{
                 transform: translateY(0);
+
             }
-            40% {
-                transform: translateY(-30px);
+            25%{
+                transform: translateY(80px);
+                height:200px;
+
             }
-            60% {
-                transform: translateY(-15px);
+            50%{
+                transform: translateY(20px);
+                transform: scale(2);
             }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        .translate{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            transform: skewX(2);
         }
     </style>
 </head>
 <body>
-    <div class="transition-box">Hover me</div>
     <div class="animation-box">Bounce</div>
 </body>
 </html>

@@ -7,16 +7,19 @@
         a:hover {
             color: red;
             text-decoration: underline;
+            font-size: 2rem;
+            background-color: aqua;
         }
         
-        .content::before {
-            content: "Note: ";
-            font-weight: bold;
-        }
-        
-        .content::after {
-            content: " (End)";
-        }
+       .content::before{
+        content: 'Note: ';
+        background-color: red;
+        color: white;
+       
+       }
+       .content::after{
+        content: 'End';
+       }
     </style>
 </head>
 <body>

@@ -4,22 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        html{
+            font-size: 30px;
+        }
         .responsive-unit-box {
-            width: 50vw; /* 50% of viewport width */
-            height: 50vh; /* 50% of viewport height */
+            width: 100vw; /* 50% of viewport width */
+            height: 100vh; /* 50% of viewport height */
             background-color: lightblue;
             text-align: center;
             line-height: 50vh;
+            font-size: 16px;
         }
-        
+        span{
+            font-size: 2rem;
+        }
         .text-size {
-            font-size: 5em; /* Responsive font size */
+            font-size: 3em; /* Responsive font size */
+        }
+        .check{
+            font-size: 2em;
+        }
+        .span-2{
+            font-size: 3rem;
         }
     </style>
 </head>
 <body>
     <div class="responsive-unit-box">
-        <p class="text-size">Responsive Units</p>
+        <p class="text-size">Responsive Units
+            <span>
+                hi
+                <span class="span-2">hello</span>
+            </span>
+        </p>
+        <p class="check">hello</p>
     </div>
 </body>
 </html>
